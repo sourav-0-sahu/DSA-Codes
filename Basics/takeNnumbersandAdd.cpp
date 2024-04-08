@@ -5,8 +5,15 @@ int main() {
     int n;
     cin >> n;
     int sum = 0;
-    for(int i=1; i<=n; i++) {
-        int x;
+    // for(int i=1; i<=n; i++) {
+    //     int x;
+    //     cout << "Enter : ";
+    //     cin >> x;
+    //     sum = sum + x;
+    // }
+
+    for(int i=0; i<n; i++) {
+        int x; 
         cout << "Enter : ";
         cin >> x;
         sum = sum + x;
