@@ -13,21 +13,26 @@ int main() {
     cin >> op;
 
     int ans = 0;
-    if(op == 1){
+    
+    switch (op)
+    {
+    case 1:
         ans = a+b;
-    }
-    else if(op == 2) {
+        break;
+    case 2:
         ans = a-b;
-    }
-    else if(op == 3) {
+        break;
+    case 3:
         ans = a*b;
-    }
-    else if(op == 4) {
-        ans =  a/b;
-    }
-    else {
-        cout << "Invalid Operation" << endl;
-        return 0; 
+        break;
+    case 4:
+        ans = a/b;
+        break;
+    
+    default:
+        //This will be executed when the above case wont evaluates to true
+        cout << "invalid Operation" << endl;
+        return 0;
     }
 
 
