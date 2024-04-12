@@ -1,0 +1,11 @@
+Integral Data types
+- Data type that represent whole Numbers
+- Intergral Data types are the data types that do not store fractional values . Example - float,Double
+
+Examples of Integral Data Types are
+    ->int
+    ->char
+    ->short
+    ->long
+    ->long long
+    AND Their Unsigned versions
