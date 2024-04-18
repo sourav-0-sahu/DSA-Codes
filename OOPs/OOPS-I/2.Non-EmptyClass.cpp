@@ -3,6 +3,8 @@ using namespace std;
 
 class Student {
     int id;
+    int age;
+    int markOfMathematics;
 
     void study() {
         cout << "Studying" << endl;
@@ -12,6 +14,6 @@ class Student {
 
 int main() {
 
-    cout << sizeof(Student) << endl; //OUTPUT : 4 bytes
+    cout << sizeof(Student) << endl; //OUTPUT : 12 bytes
     return 0;
 }
