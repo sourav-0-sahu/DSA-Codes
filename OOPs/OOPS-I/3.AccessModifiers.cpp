@@ -47,6 +47,8 @@ int main() {
     cout << s1.noOfSubjects << endl;
 
     //Note : we cannot directly access private data members of a class
+    // s1.gfName = "Shruti" ; This will throw error because , gfName is a private data member
+    //cout << s1.gfName << endl; //This will also throw error because we are trying to access private data member outside the class
     
     return 0;
 }
