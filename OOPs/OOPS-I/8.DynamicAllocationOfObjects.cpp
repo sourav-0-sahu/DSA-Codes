@@ -31,5 +31,11 @@ int main() {
 
     //Another way of accessing Dynamically allocated Objects
     cout << (*s2).name << " " << (*s2).age << endl; //Henry 21
+
+
+    //DEALLOCATING DYNAMICALLY ALLOCATED OBJECTS
+    delete s2;
+
+    
     return 0;
 }
