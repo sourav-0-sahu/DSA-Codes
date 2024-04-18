@@ -12,5 +12,9 @@ int main() {
 
     //Accessing Global variable using double colon(::)
     cout << "Global Variable x : " << ::x << endl;
+
+    //You can also modify global variable using double colon
+    ::x = 9100;
+    cout << "Global Variable x : " << ::x << endl;
     return 0;
 }
