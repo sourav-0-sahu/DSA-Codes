@@ -6,10 +6,10 @@ class House {
     const int length;
 
     public:
-    //Old Method -> Constructor
-    House(int _length) {
-        length = _length; //This throws error because a const member variable cant be assigned under a ctor
-    }
+   //New Method -> Initializer list
+   House(int _length) : length(_length) {
+    cout << "Initializer list called" << endl;
+   }
 };
 
 int main() {
