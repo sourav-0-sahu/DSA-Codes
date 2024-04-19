@@ -32,3 +32,10 @@ int main() {
     cout << h1.getLength() << endl;
     return 0;
 }
+
+/*
+    Note
+    ----
+    If you want to write a member function in which the member variables must not be modified,then declare that functon as const.
+    Therefore, we make getters as const function and setters as non const function
+*/
