@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
     const int *a = new int(5);
-    //int *const a = new int(5); //Both line 8 and 9 are the one and the same thing
+    //int const *a = new int(5); //Both line 8 and 9 are the one and the same thing
     //Note : The value cannot be modified which is stored in the memory
     //But the pointer is not constant that means the pointer can point to any other Integer address
 
