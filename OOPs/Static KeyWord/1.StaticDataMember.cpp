@@ -35,3 +35,8 @@ int main() {
     cout << obj3.x << " " << obj3.y << endl; //OUTPUT : 75 65
     return 0;
 }
+
+/*
+    NOTE:
+    x and y are the variable of the class , they are shared across all instance
+*/
