@@ -71,7 +71,11 @@ class Queue {
 
     //Size of the Queue
     int getSize() {
-        return rear-front+1; //Review
+        if(front == -1 && rear == -1) {
+            //Q is empty
+            return 0;
+        }
+        return rear-front+1; //Reviewed
     }
 
     //Get front
@@ -139,5 +143,7 @@ int main() {
 
     q.pop(); //output: Queue Underflow because no element present in the queue
 
+
+    cout << q.getSize() << endl; //output: 0
     return 0;
 }
