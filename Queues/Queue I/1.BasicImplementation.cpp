@@ -120,5 +120,24 @@ int main() {
     //check queue is empty or not
     cout << "Queue is empty or not : " << q.isEmpty() << endl; //output : 0 -> false
 
+    q.push(100); //OUTPUt : queue overflow
+
+    q.print(); //output : -1 20 30 40 50
+
+    q.pop(); 
+    q.print(); //output : -1 -1 30 40 50
+    cout << q.getFront() << endl; //output : 30
+
+    q.pop();
+    q.pop();
+    
+    q.print(); //output : -1 -1 -1 -1 50
+    cout << q.getFront() << endl; //output : 50
+
+    q.pop();
+    q.print(); //output : -1 -1 -1 -1 -1 , this implies the queue is empty
+
+    q.pop(); //output: Queue Underflow because no element present in the queue
+
     return 0;
 }
