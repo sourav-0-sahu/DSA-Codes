@@ -89,6 +89,19 @@ class Queue {
         }
     }
 
+    //Get rear
+    int gerRear() {
+        if(front == -1) {
+            cout << "The queue is empty,rear element kahan se laye bhai" << endl;
+        }
+        else if(front == rear) {
+            //single Element wala case
+            return arr[rear];
+        }
+
+        return arr[rear];
+    }
+
     //print the Queue to watch queue implementation
     void print() {
         cout << "Printing Queue : " << endl;
