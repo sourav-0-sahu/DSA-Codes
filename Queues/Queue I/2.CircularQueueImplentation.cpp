@@ -19,11 +19,11 @@ class CircularQueue{
     //Push
     void push(int val) {
         //Overflow
-        if((front == 0 && rear == size-1) || (rear == front - 1)) {
+        if((front == 0 && rear == size-1) || (rear == front - 1)) { //YE BHUL JAATE HAIN
             cout << "OverFlow" << endl;
         }
         //Empty Case 
-        else if(front == -1 && rear == -1) {
+        else if(front == -1 && rear == -1) { //YE BHUL JAATE HAIN
             front++,rear++;
             arr[rear] = val;
         }
@@ -46,7 +46,7 @@ class CircularQueue{
             cout << "UnderFlow" << endl;
         }
         //Single Element
-        else if(front == rear) {
+        else if(front == rear) {  //YE BHUL JAATE HAIN
             arr[front] = -1;
             front = -1;
             rear = -1;
