@@ -102,10 +102,28 @@ int main() {
     Cq.print(); //OUTPUT: -1 20 30 40 50  Front: 1 Rear: 4
 
     Cq.pop();
-    Cq.print();
+    Cq.print();//OUTPUT: -1 -1 30 40 50   Front: 2 Rear: 4
 
     Cq.pop();
-    Cq.print();
+    Cq.print();//OUTPUT: -1 -1 -1 40 50   Front: 3 Rear: 4
+
+    //Circular Push
+    Cq.push(100);
+    Cq.print(); //OUTPUT: 100 -1 -1 40 50   Front: 3 Rear: 0
+
+    Cq.push(110);
+    Cq.print(); //OUTPUT: 100 110 -1 40 50    Front: 3 Rear: 1
+
+    Cq.push(120);
+    Cq.print(); //OUTPUT: 100 110 120 40 50   Front: 3 Rear: 2
+
+    // As you can see the queue is full  100 110 120 40 50
+    //So any further push must result in overflow
+    Cq.push(130);
+    Cq.print(); //OUTPUT: 100 110 120 '130' 50 , Front:3 Rear:3
+    //it replaced the Element 40 into 130, which should Not be
+
+
 
     return 0;
 }
