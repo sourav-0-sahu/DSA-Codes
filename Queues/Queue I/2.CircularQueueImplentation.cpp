@@ -65,12 +65,12 @@ class CircularQueue{
 
     //Print
     void print() {
-        cout << "Front: " << front << " Rear: " << rear << endl;
-        cout << "Printing Queue : " << endl;
+        cout << "Printing Queue : ";
         for(int i=0; i<size; i++) {
             cout << arr[i] << " ";
         }
         cout << endl;
+        cout << "Front: " << front << " Rear: " << rear << endl;
     }
 };
 
@@ -96,6 +96,16 @@ int main() {
     Cq.print();//OUTPUT: 10 20 30 40 50, Front = 0, Rear = 4
 
     Cq.push(60); //OUTPUT: Queue Overflow
+
+    //Popping Elements
+    Cq.pop();
+    Cq.print(); //OUTPUT: -1 20 30 40 50  Front: 1 Rear: 4
+
+    Cq.pop();
+    Cq.print();
+
+    Cq.pop();
+    Cq.print();
 
     return 0;
 }
