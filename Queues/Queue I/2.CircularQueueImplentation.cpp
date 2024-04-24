@@ -19,7 +19,7 @@ class CircularQueue{
     //Push
     void push(int val) {
         //Overflow
-        if(front == 0 && rear == size-1) {
+        if((front == 0 && rear == size-1) || (rear == front - 1)) {
             cout << "OverFlow" << endl;
         }
         //Empty Case 
@@ -117,13 +117,16 @@ int main() {
     Cq.push(120);
     Cq.print(); //OUTPUT: 100 110 120 40 50   Front: 3 Rear: 2
 
+    /*Before Fix
+
     // As you can see the queue is full  100 110 120 40 50
     //So any further push must result in overflow
     Cq.push(130);
     Cq.print(); //OUTPUT: 100 110 120 '130' 50 , Front:3 Rear:3
     //it replaced the Element 40 into 130, which should Not be
 
-
+    */
+    Cq.push(130); //OUTPUT : OVerflow
 
     return 0;
 }
