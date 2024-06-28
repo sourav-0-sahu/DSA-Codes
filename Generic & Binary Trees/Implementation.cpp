@@ -107,7 +107,7 @@ void levelOrderTraversal(Node *root)
         Node *currNode = q.front();
 
         //print the current Node ka data
-        cout << currNode->data << endl;
+        cout << currNode->data << " ";
 
         // step 2: pop the front element from the queue
         q.pop();
