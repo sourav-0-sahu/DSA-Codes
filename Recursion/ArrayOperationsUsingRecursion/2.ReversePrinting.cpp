@@ -4,7 +4,7 @@ using namespace std;
 void reversePrinting(int* arr,int size,int index) {
     //Base Case
     if(index == size) return;
-    reversePrinting(arr,size,index+1);
+    reversePrinting(arr,size,index+1); // Here Dont Do ++index or index++ 
 
     cout << arr[index] << endl;
 
