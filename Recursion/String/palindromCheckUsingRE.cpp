@@ -3,14 +3,15 @@ using namespace std;
 
 bool checkPalindrome(string str,int start,int end) {
     //base case
-    if(start >= end) return true;
+    if(start > end) return true;
 
-    //1 case
-    if(str[start] != str[end]) {
-        return false;
+    //operation
+    if(str[start] == str[end]) {
+        bool aageKiAns = checkPalindrome(str,start+1,end-1);
+        return aageKiAns;
     }
-
-    return checkPalindrome(str, start+1, end-1);
+    //Agar opar ka 2 statement true return nahi kar paye iska matlab string palindrome nahi hai
+    return false;
 }
 
 
