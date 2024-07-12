@@ -15,7 +15,7 @@ void merge(int arr[],int start,int end) {
 
     //copy values from original array to left array
     //index from start to mid-s+1
-    int k = start; //k is the index counter on main array
+    int k = start; //k is the index counter on main array (YAHAN PAR BHI GALTI HOJATA HAI)
     for(int i=0; i<length_of_Left; i++) {
         leftArr[i] = arr[k];
         k++;
@@ -23,7 +23,7 @@ void merge(int arr[],int start,int end) {
 
     //Copy values from the original array to right array
     //index mid+1 to end
-    k= mid + 1;
+    k= mid + 1; (YAHAN PAR BHI GALTI HOJATA HAI)
     for(int i=0; i<length_of_right; i++) {
         rightArr[i] = arr[k];
         k++;
